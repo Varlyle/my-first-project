@@ -1,0 +1,556 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.contacts-section__content, .buy-content, .reviews-section__item, .reviews-section__content, .reviews-section, .screenshots-section__item, .screenshots-section__content, .screenshots-section, .dignity-article, .dignity-section, .about-section, .main-section, .section {
+  display: flex;
+}
+
+.cotacts-form__message, .cotacts-form__lname, .cotacts-form__fname {
+  display: block;
+  width: 500px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #445161;
+}
+.title_center {
+  text-align: center;
+}
+
+.text {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.size_s {
+  font-size: 14px;
+}
+.size_m {
+  font-size: 16px;
+}
+
+.section {
+  padding: 50px;
+}
+.section__img {
+  width: 40%;
+}
+.section_blue {
+  background-color: #445162;
+}
+.section_dark {
+  background-color: #f5f5f5;
+}
+
+.main-section {
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.main-article {
+  color: white;
+}
+.main-article__title {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.main-article__list {
+  font-size: 20px;
+}
+.main-article__item {
+  margin-bottom: 10px;
+}
+.main-article__item::before {
+  content: url("../assets/check_icon.png");
+  margin-right: 10px;
+}
+
+.about-section {
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.about-article {
+  width: 678.4px;
+}
+.about-article__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.dignity-section {
+  flex-flow: column;
+}
+.dignity-section__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.dignity-article {
+  flex-flow: row;
+  justify-content: space-between;
+}
+.dignity-article__list {
+  font-size: 16px;
+  color: #333333;
+  text-align: left;
+}
+.dignity-article__item {
+  background: url("../assets/plus_icon.png") no-repeat 0 4px;
+  padding-left: 50px;
+  margin-bottom: 35px;
+}
+
+.screenshots-section {
+  flex-flow: column;
+  justify-content: space-between;
+}
+.screenshots-section__content {
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.screenshots-section__item {
+  flex-flow: row;
+  margin-right: 10px;
+}
+.screenshots-section__img {
+  margin-right: 15px;
+}
+.screenshots-section__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.screenshots-article__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text_italic {
+  font-style: italic;
+  line-height: 1.2;
+}
+.text_signature {
+  color: #989898;
+}
+
+.screenshots-article__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.reviews-section {
+  flex-flow: column;
+}
+.reviews-section__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.reviews-section__content {
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.reviews-section__item {
+  flex-flow: row;
+  margin-right: 30px;
+}
+.reviews-section__img {
+  background: url("../assets/userpic.png") no-repeat 0 4px;
+  padding-left: 90px;
+}
+
+.reviews-article {
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding: 15px 15px 0px 30px;
+  background-size: contain;
+}
+
+.buy-section {
+  flex-flow: column;
+}
+.buy-section__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.buy-content {
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.buy-content__offer {
+  text-align: center;
+  background-color: #445162;
+  border-radius: 5px;
+  color: white;
+  margin: 0 45px;
+  padding: 10px;
+}
+.buy-content__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.buy-content__price {
+  text-align: center;
+  font-size: 40px;
+  color: #445162;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.buy-content__list {
+  list-style-type: decimal;
+  text-align: left;
+  margin: 20px 0 20px 20px;
+}
+.buy-content__item {
+  margin-bottom: 10px;
+}
+.buy-content__button {
+  background-color: white;
+  border-radius: 5px;
+  width: 90%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #445162;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.contacts-section {
+  flex-flow: column;
+}
+.contacts-section__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+.contacts-section__content {
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+}
+.contacts-section__info {
+  text-align: left;
+  color: white;
+}
+.contacts-section__item {
+  margin-bottom: 20px;
+}
+
+.cotacts-form {
+  margin-right: 45px;
+}
+.contacts-form__submit {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #445161;
+  width: 200px;
+}
+
+.icon_skype {
+  background: url("../assets/skype_icon.png") no-repeat 0 0;
+  padding: 5px 30px;
+}
+.icon_icq {
+  background: url("../assets/icq_icon.png") no-repeat 0 0;
+  padding: 5px 30px;
+}
+.icon_email {
+  background: url("../assets/email_icon.png") no-repeat 0 0;
+  padding: 5px 30px;
+}
+.icon_phone {
+  background: url("../assets/phone_icon.png") no-repeat 0 0;
+  padding: 5px 30px;
+}
+
+.social-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+  color: #445161;
+  margin-right: 5px;
+}
+
+.footer {
+  text-align: center;
+  width: 1280px;
+  font-size: 12px;
+  padding: 10px 0 5px 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 740px) {
+  .cotacts-form__fname, .cotacts-form__lname, .cotacts-form__message {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .section {
+    padding: 10px;
+  }
+
+  .main-section {
+    flex-flow: column;
+  }
+
+  .main-article__title {
+    font-size: 45px;
+  }
+
+  .section__img {
+    align-self: center;
+  }
+
+  .about-section {
+    flex-flow: column;
+  }
+
+  .about-article {
+    width: 100%;
+  }
+
+  .dignity-article {
+    flex-flow: column;
+  }
+
+  .screenshots-section__content {
+    flex-flow: column;
+  }
+
+  .screenshots-section__item {
+    flex-flow: column;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .screenshots-section__img {
+    margin-bottom: 15px;
+  }
+
+  .reviews-section__content {
+    flex-flow: column;
+    margin: 0;
+  }
+
+  .reviews-section__item {
+    margin-bottom: 10px;
+  }
+
+  .buy-content {
+    flex-flow: column;
+  }
+
+  .buy-content__offer {
+    margin: 15px auto;
+  }
+
+  .contacts-section__content {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cotacts-form {
+    margin-right: 45px;
+  }
+  .contacts-form__submit {
+    width: 100%;
+    align-self: center;
+  }
+
+  .contacts-section__info {
+    margin-top: 20px;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 740px) {
+  .profile {
+    width: 100%;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .main-section {
+    flex-flow: column;
+  }
+
+  .main-article__title {
+    font-size: 45px;
+  }
+
+  .section__img {
+    align-self: center;
+  }
+
+  .about-section {
+    flex-flow: column;
+  }
+
+  .about-article {
+    width: 100%;
+  }
+
+  .dignity-article {
+    flex-flow: column;
+  }
+
+  .screenshots-section__content {
+    flex-flow: column;
+  }
+
+  .screenshots-section__item {
+    flex-flow: column;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .screenshots-section__img {
+    margin-bottom: 15px;
+    width: 50%;
+  }
+
+  .reviews-section__content {
+    flex-flow: column;
+    margin: 0;
+  }
+
+  .reviews-section__item {
+    margin-bottom: 10px;
+  }
+
+  .buy-content {
+    flex-flow: row;
+  }
+
+  .buy-content__offer {
+    margin: 15px;
+  }
+
+  .buy-content__list {
+    margin-right: 20px;
+  }
+
+  .contacts-section__content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cotacts-form__fname, .cotacts-form__lname, .cotacts-form__message {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+
+  .contacts-form__submit {
+    width: 100%;
+    align-self: center;
+  }
+
+  .contacts-section__info {
+    margin-top: 20px;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
