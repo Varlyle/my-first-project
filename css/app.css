@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -69,11 +70,6 @@ table {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.profile {
-  width: 1280px;
-  margin: 0 auto;
 }
 
 .title {
@@ -551,6 +547,91 @@ body {
   .footer {
     width: 100%;
   }
+}
+.body {
+  opacity: 0;
+  transition: 4s;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.body-active {
+  opacity: 1;
+}
+
+.link-anchor {
+  color: white;
+  text-decoration: none;
+}
+
+.profile {
+  transition: 4s;
+}
+
+.hide-button {
+  font-size: 20px;
+  color: white;
+  background-color: #445161;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.hidden {
+  overflow: hidden;
+  height: 0px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/* Собственно сам слайдер */
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: 1s;
+}
+
+.item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 300px;
+}
+
+.slider-buttons {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.slider-button {
+  background-color: #445161;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 30px;
 }
 
 /*# sourceMappingURL=app.css.map */
