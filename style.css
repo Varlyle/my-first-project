@@ -1,0 +1,48 @@
+.profile {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.header {
+  background-color: rgb(250, 210, 210);
+  text-align: center;
+  padding: 20px;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+.header__text {
+  font-size: 45px;
+  color: rgb(245, 88, 219);
+}
+
+.text_italic {
+  font-style: italic;
+}
+
+.title_center {
+  text-align: center;
+}
+
+.section {
+  padding: 50px;
+}
+
+.button-bar {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.header__button {
+  font-size: 20px;
+  padding: 20px;
+  margin: 0 20px;
+  border: none;
+  color: white;
+  background-color: red;
+}
+
+.button_active {
+  background-color: seagreen;
+}
